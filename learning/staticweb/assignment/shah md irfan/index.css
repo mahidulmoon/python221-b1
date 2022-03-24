@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: whitesmoke;
+    font-family: "Arial";
+  }
+  .resume {
+    margin: 60px;
+    text-align: center;
+  }
+  .clsGreen {
+    color: green;
+  }
+  .edu,.exp {
+    color: green;
+  }
+  .card {
+    margin: 25px 0;
+    display: block;
+  }
+  .card:hover {
+    border: 3px solid lightgreen;
+  }
+  .card-header {
+    padding: 10px;
+    margin-bottom: 0;
+    background-color: white;
+    border-bottom: none;
+  }
+  .card small {
+    color: lightgray;
+  }
+  .card h3,
+  p {
+    color: gray;
+  }
+  .card h6 {
+    color: gray;
+  }
+  #footer{
+      text-align: right;
+      margin: 20px, 0px, 0px, 0px;
+      background-color: rgb(190, 179, 179);
+      color: whitesmoke;
+  }
+  #strwrk{
+      color: green;
+  }
+  

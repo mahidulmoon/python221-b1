@@ -1,0 +1,3 @@
+
+Time : 15/02/2022 22:37:42
+Data: {'univarsity': 'daffodil', 'department': 'software', 'students': {1: {'name': 'mahidul', 'subject': 'algorithm'}, 2: {'name': 'rishan', 'subject': 'database'}, 3: {'name': 'asad', 'subject': 'web application'}, 4: {'name': 'farjana', 'subject': 'data structure'}}}

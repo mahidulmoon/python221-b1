@@ -1,0 +1,98 @@
+#parant{
+    border: 2px solid none;
+}
+#div1{
+    border: 3px dotted blue;
+    margin: 5px;
+    padding: 6px;
+    width: 40%;
+    height: 25%;
+    display: inline-block;
+    position: relative;
+    left: 40px;
+    opacity: 0.5;
+}
+#div2{
+    border: 3px dashed red;
+    margin: 5px;
+    padding: 6px;
+    width: 40%;
+    height: 25%;
+    display: inline-block;
+    position: relative;
+    left: 100px;
+    opacity: 0.5;
+}
+#div3{
+    border: 3px double rebeccapurple;
+    margin: 5px;
+    padding: 6px;
+    width: 40%;
+    height: 25%;
+    display: inline-block;
+    position: relative;
+    left: 40px;
+    opacity: 0.5;
+}
+#div4{
+    border: 3px solid magenta;
+    margin: 5px;
+    padding: 6px;
+    width: 40%;
+    height: 25%;
+    display: inline-block;
+    position: relative;
+    left: 100px;
+    opacity: 0.5;
+}
+#div5{
+    margin: 5px;
+    padding: 6px;
+    width: 40%;
+    height: 25%;
+    display: auto;
+    /* position: relative;
+    left: 100px; */
+}
+.tag1{
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.tag2{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tag3{
+    font-size: 16px;
+    font-style: italic;
+}
+.tag4{
+    font-size: 19px;
+    font-style: normal;
+}
+.tag5{
+    font-size: 21px;
+    font-weight: bold;
+}
+.tag6{
+    border: 3px solid none;
+    margin: 5px;
+    padding: 6px;
+    width: 40%;
+    height: 25%;
+    display: inline-block;
+    position: relative;
+    left: 100px;
+    font-size: 28px;
+}
+.tag7{
+    border: 3px solid none;
+    margin: 5px;
+    padding: 6px;
+    width: 40%;
+    height: 25%;
+    display: inline-block;
+    position: relative;
+    left: 100px;
+    font-size: 28px;
+}

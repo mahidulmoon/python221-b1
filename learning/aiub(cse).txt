@@ -1,0 +1,3 @@
+
+Time : 20/02/2022 22:38:43
+Data: {'university': 'aiub', 'department': 'cse', 'students': {1: {'name': 'mahi', 'subject': 'db'}, 2: {'name': 'safa', 'subject': 'algo'}}}
