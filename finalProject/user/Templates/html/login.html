@@ -23,9 +23,13 @@
                         <div class="success-data" v-else>
                             <div class="text-center d-flex flex-column"> <i class='bx bxs-badge-check'></i> <a href={% url 'registerpage' %} class="text-center">Don't have account? <br> Register Here</a> </div>
                         </div>
-                        {% comment %} <div class="success-data" v-else>
-                            <div class="text-center d-flex flex-column"> <i class='bx bxs-badge-check'></i> <span class="text-center fs-1">You have been logged in <br> Successfully</span> </div>
-                        </div> {% endcomment %}
+                        {% if messages %}
+                            {% for message in messages %}
+                                <div class="success-data" v-else>
+                                    <div class="text-center d-flex flex-column"> <i class='bx bxs-badge-check'></i> <span class="text-center fs-1"><br> {{message.message}}</span> </div>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
                     </div>
                 </div>
             </div>
