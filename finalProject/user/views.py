@@ -21,6 +21,10 @@ def loginPage(request):
             return redirect('loginpage')
 
 
+def logOut(request):
+    auth.logout(request)
+    return redirect('loginpage')
+
 
 
 def registerPage(request):
