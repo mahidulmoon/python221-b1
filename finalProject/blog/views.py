@@ -4,4 +4,4 @@ from django.contrib.auth.decorators import login_required
 
 @login_required(login_url='/')
 def blogPage(request):
-    return render(request,'blogIndex.html')
+    return render(request,'index.html')
