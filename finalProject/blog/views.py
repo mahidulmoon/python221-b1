@@ -8,13 +8,17 @@ from django.contrib import messages
 @login_required(login_url='/')
 def blogPage(request):
     if request.method == "GET":
-        return render(request,'index.html')
+        queryData = Todo.objects.all()
+        contextData = {
+            "data" : queryData,
+        }
+        return render(request,'index.html',contextData)
     elif request.method == "POST":
         title = request.POST["todotitle"]
         description = request.POST["tododescription"]
 
         try:
-            Todo.objects.create(title=title,description=description)
+            Todo.objects.create(title=title,description=description,created_by=request.user)
             messages.success(request,"ToDo has been successfully created.")
         except Exception as e:
             messages.error(request,"Can not able to create todo "+str(e))
