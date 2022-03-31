@@ -37,6 +37,7 @@
             <div class="container-sm">
                 <div class="row">
                     <div class="col-8">
+
                       {% for value in data %}
                         <div class="card text-center">
                           <div class="card-header">
@@ -48,7 +49,7 @@
                             {% comment %} <a href="#" class="btn btn-primary">Go somewhere</a> {% endcomment %}
                           </div>
                           <div class="card-footer text-muted">
-                            {{data.created_date}}
+                            {{value.date_time}}
                           </div>
                         </div>
                       {% endfor %}
