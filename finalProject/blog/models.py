@@ -13,4 +13,7 @@ class Todo(models.Model):
     description = models.TextField(blank=False,null=True)
     img_file = models.ImageField(upload_to='todo/',default="")
     created_by = models.ForeignKey(User,on_delete=models.CASCADE)
-    created_at = models.DateTimeField(null=True, blank=True, auto_now_add=True)
+    created_date = models.DateTimeField(blank=True, auto_now_add=True)
+
+    class Meta:
+        db_table = "blog_todo"

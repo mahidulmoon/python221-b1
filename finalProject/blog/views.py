@@ -24,3 +24,13 @@ def blogPage(request):
             messages.error(request,"Can not able to create todo "+str(e))
         
         return redirect('allblog')
+
+
+@login_required(login_url='/')
+def owntodo(request):
+    if request.method == "GET":
+        queryData = Todo.objects.filter(created_by=request.user)
+        contextData = {
+            "data" : queryData,
+        }
+        return render(request,'ownTodo.html',contextData)
