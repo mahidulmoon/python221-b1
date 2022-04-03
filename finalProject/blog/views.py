@@ -36,3 +36,11 @@ def owntodo(request):
             "data" : queryData,
         }
         return render(request,'ownTodo.html',contextData)
+
+
+@login_required(login_url='/')
+def tododelete(request,pk):
+    deleteData = Todo.objects.get(id=pk)
+    deleteData.delete()
+    messages.success(request,"ToDo has been successfully deleted.")
+    return redirect("allblog")

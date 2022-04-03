@@ -52,6 +52,10 @@
                           <div class="card-footer text-muted">
                             {{value.date_time}}
                           </div>
+                          <div class="d-grid gap-2">
+                            <a href={% url "deleteblog" value.id %}><button class="btn btn-danger" type="button">Delete</button></a>
+                            <a><button class="btn btn-success" type="button">Update</button></a>
+                          </div>
                         </div>
                       {% endfor %}
                     </div>
