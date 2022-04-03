@@ -4,4 +4,5 @@ urlpatterns = [
     path("allblogs/",blogPage,name='allblog'),
     path("ownblogs/",owntodo,name='ownblogs'),
     path("deleteblog/<int:pk>",tododelete,name='deleteblog'),
+    path("updateblog/<int:pk>",updateBlog,name='updateblog'),
 ]
